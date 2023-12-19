@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Football Killer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- unity resources -->
+    <script src="Build/UnityLoader.js"></script>
+
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FootballKillerWeb.json");
+    </script>
+  </head>
+
+  <body>
+    <div class="webgl-wrapper" style="position: absolute; top: 50%; left: 50%; 
+    -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
+      <div class="aspect" style="margin-top: calc(100% / 1280 * 720);"></div>
+      <div class="webgl-content">
+        <div id="unityContainer"></div>
+      </div>
+    </div>
+  </body>
+</html>
